@@ -1,1 +1,16 @@
-Welcome to Adderess Book Databse using Mysql
+//UC1
+mysql> CREATE DATABASE address_book;
+Query OK, 1 row affected (0.04 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| address_book       |
+| mysql              |
+| payroll_service    |
+| performance_schema |
+| sys                |
++--------------------+
+6 rows in set (0.00 sec)

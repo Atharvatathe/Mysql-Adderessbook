@@ -72,3 +72,21 @@ mysql> SELECT * FROM Address_Book_Table;
 |    3 | Alia      | bhat     | chinchvad   | pune       | Maharashtra | 400002 | 5555555555  | alia@kapur.com    |
 +------+-----------+----------+-------------+------------+-------------+--------+-------------+-------------------+
 3 rows in set (0.00 sec)
+
+
+//UC4
+
+mysql> update Address_Book_Table set phoneNumber = '9999999999' where firstName ='Atharva';
+Query OK, 1 row affected (0.24 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM Address_Book_Table;
++------+-----------+----------+-------------+------------+-------------+--------+-------------+-------------------+
+| srNo | firstName | lastName | address     | city       | state       | zip    | phoneNumber | email             |
++------+-----------+----------+-------------+------------+-------------+--------+-------------+-------------------+
+|    1 | Atharva   | Tathe    | Temple Road | pandharpur | Maharashtra | 413304 | 9999999999  | atharva@gamil.com |
+|    2 | Ram       | Kumar    | powai fata  | Mumbai     | Maharashtra | 400001 | 7777777777  | ramkumar@g.com    |
+|    3 | Alia      | bhat     | chinchvad   | pune       | Maharashtra | 400002 | 5555555555  | alia@kapur.com    |
++------+-----------+----------+-------------+------------+-------------+--------+-------------+-------------------+
+3 rows in set (0.00 sec)
+

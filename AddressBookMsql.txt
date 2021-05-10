@@ -14,3 +14,36 @@ mysql> show databases;
 | sys                |
 +--------------------+
 6 rows in set (0.00 sec)
+
+
+//UC2
+mysql> CREATE TABLE Address_Book_Table
+    -> (
+    -> srNo     INT unsigned NOT NULL AUTO_INCREMENT,
+    -> firstName  VARCHAR(150) NOT NULL,
+    -> lastName   VARCHAR(150) NOT NULL,
+    -> address   VARCHAR(250) NOT NULL,
+    -> city     VARCHAR(150) NOT NULL,
+    -> state   VARCHAR(150)  NOT NULL,
+    -> zip      VARCHAR(150) NOT NULL,
+    -> phoneNumber  VARCHAR(250) NOT NULL,
+    -> email    VARCHAR(300) NOT NULL,
+    -> PRIMARY KEY (srNo)
+    -> );
+Query OK, 0 rows affected (1.13 sec)
+
+mysql> DESCRIBE Address_Book_TABLE;
++-------------+------------------+------+-----+---------+----------------+
+| Field       | Type             | Null | Key | Default | Extra          |
++-------------+------------------+------+-----+---------+----------------+
+| srNo        | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| firstName   | varchar(150)     | NO   |     | NULL    |                |
+| lastName    | varchar(150)     | NO   |     | NULL    |                |
+| address     | varchar(250)     | NO   |     | NULL    |                |
+| city        | varchar(150)     | NO   |     | NULL    |                |
+| state       | varchar(150)     | NO   |     | NULL    |                |
+| zip         | varchar(150)     | NO   |     | NULL    |                |
+| phoneNumber | varchar(250)     | NO   |     | NULL    |                |
+| email       | varchar(300)     | NO   |     | NULL    |                |
++-------------+------------------+------+-----+---------+----------------+
+9 rows in set (0.12 sec)

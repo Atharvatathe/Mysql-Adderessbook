@@ -103,3 +103,13 @@ mysql> SELECT * FROM Address_Book_Table;
 |    2 | Ram       | Kumar    | powai fata  | Mumbai     | Maharashtra | 400001 | 7777777777  | ramkumar@g.com    |
 +------+-----------+----------+-------------+------------+-------------+--------+-------------+-------------------+
 2 rows in set (0.00 sec)
+
+
+//UC6
+mysql> SELECT * FROM Address_Book_Table where city = 'pandharpur';
++------+-----------+----------+-------------+------------+-------------+--------+-------------+-------------------+
+| srNo | firstName | lastName | address     | city       | state       | zip    | phoneNumber | email             |
++------+-----------+----------+-------------+------------+-------------+--------+-------------+-------------------+
+|    1 | Atharva   | Tathe    | Temple Road | pandharpur | Maharashtra | 413304 | 9999999999  | atharva@gamil.com |
++------+-----------+----------+-------------+------------+-------------+--------+-------------+-------------------+
+1 row in set (0.00 sec)
